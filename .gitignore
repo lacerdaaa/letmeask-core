@@ -1,7 +1,7 @@
 node_modules/
-package-lock.json
 .env
 .gitignore
+package-lock.json
 .vscode/
 .DS_Store
 dist/
@@ -14,3 +14,5 @@ yarn-error.log*
 *.log
 *.swp
 *.swo 
+docker/
+biome.jsonc

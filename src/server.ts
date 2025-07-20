@@ -20,4 +20,4 @@ app.get('/health-check', () => {
     return { status: 'ok' };
 });
 
-app.listen({ port: env.PORT }).then(() => console.log(`HTTP Server running on port ${env.PORT}.`))
+app.listen({ port: env.PORT }).then(() => console.log(`HTTP Server running on port ${env.PORT}.`));
