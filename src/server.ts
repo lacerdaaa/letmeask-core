@@ -1,11 +1,11 @@
+import { fastifyCors } from '@fastify/cors';
 import { fastify } from 'fastify';
+import { env } from './env.ts';
 import {
     type ZodTypeProvider,
     validatorCompiler,
     serializerCompiler,
 } from 'fastify-type-provider-zod';
-import { fastifyCors } from '@fastify/cors';
-import { env } from './env.ts';
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
