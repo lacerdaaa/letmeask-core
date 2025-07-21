@@ -16,3 +16,6 @@ yarn-error.log*
 *.swo 
 docker/
 biome.jsonc
+src/db/migrations/
+src/db/migrations/meta/
+src/db/migrations/meta/_journal.json

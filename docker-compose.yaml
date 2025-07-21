@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   letmeask-pg:
     image: pgvector/pgvector:pg17
