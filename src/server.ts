@@ -9,6 +9,7 @@ import {
 import { getRoomsRoute } from './http/routes/get-rooms.ts';
 import { createRoomRoute } from './http/routes/create-room.ts';
 import { getRoomsQuestions } from './http/routes/get-rooms-questions.ts';
+import { createQuestionRoute } from './http/routes/create-question.ts';
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -26,5 +27,6 @@ app.get('/health-check', () => {
 app.register(getRoomsRoute,);
 app.register(getRoomsQuestions);
 app.register(createRoomRoute,);
+app.register(createQuestionRoute,);
 
 app.listen({ port: env.PORT }).then(() => console.log(`HTTP Server running on port ${env.PORT}.`));
